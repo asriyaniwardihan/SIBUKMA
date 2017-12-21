@@ -88,7 +88,7 @@ require_once(BASEPATH."includes/web_head.php")
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                        <img src="images/book/book-xs-2.jpg" class="media-object img-thumbnail" alt="library" height="550" width="300">
+                        <img src="images/book/book-xs-2.jpg" class="media-object img-thumbnail" alt="library" width="240">
                         </div>
                         <div class="col-md-9 book-content">
                         <div class="book-details">
@@ -130,15 +130,6 @@ require_once(BASEPATH."includes/web_head.php")
             <div class="clear"></div>
             </div>	
             
-            <div class="tabs-container">
-            
-                    <div style="display: block;" class="tab" id="tab1">
-                    <p class="more_details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        
-            </div>	
-                    
-             <div class="clear"></div>
-            </div>	
             
             </div>
 
