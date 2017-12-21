@@ -82,23 +82,7 @@ require_once(BASEPATH."includes/web_head.php")
                             <p>Result For <a href="" class="text-primary">"Your Searching"</a></p>
                             <p><strong>6</strong> of <strong>20</strong> Book Found</p>
                         </div>
-                        <div class="pull-right col-xs-12 col-sm-7 col-md-6">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label class="control-label col-xs-4" for="sort">Sort By : </label>
-                                    <div class="col-xs-8">
-                                        <div class="form-group">
-                                            <select name="sort" id="sort" class="form-control">
-                                                <option value="">Best Match</option>
-                                                <option value="">Best Book</option>
-                                                <option value="">Latest Book</option>
-                                                <option value="">Old Book</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        
                     </div>
                     <hr>
                     <div class="space-20"></div>
@@ -116,15 +100,7 @@ require_once(BASEPATH."includes/web_head.php")
                                     </div>
                                     <div class="media-body">
                                         <h5><?php echo $data['id_buku']." ".$data['judul'] ?></h5>
-                                        <h6>By John Doe</h6>
-                                        <div class="space-10"></div>
-                                        <ul class="list-inline list-unstyled rating-star">
-                                            <li class="active"><i class="icofont icofont-star"></i></li>
-                                            <li class="active"><i class="icofont icofont-star"></i></li>
-                                            <li class="active"><i class="icofont icofont-star"></i></li>
-                                            <li class="active"><i class="icofont icofont-star"></i></li>
-                                            <li><i class="icofont icofont-star"></i></li>
-                                        </ul>
+                                        <h6>By <?php echo $data['penulis'] ?></h6>
                                         <div class="space-10"></div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
                                         <a href="details.php" class="more" class="text-primary">Details Book</a>

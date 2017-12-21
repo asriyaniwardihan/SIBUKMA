@@ -100,7 +100,6 @@ require_once(BASEPATH."includes/web_head.php")
                             <div class="panel-heading">
                                 <ul class="nav nav-tabs">
                                     <li class="active"><a data-toggle="tab" href="#book">Book</a></li>
-                                    <li><a data-toggle="tab" href="#author">Author</a></li>
                                     <li><a data-toggle="tab" href="#publisher">Publisher</a></li>
                                 </ul>
                             </div>
