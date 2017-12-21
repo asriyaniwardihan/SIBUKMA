@@ -1,33 +1,11 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'].'/SIBUKMA/config/Core.php');
+defined('BASEPATH') OR exit('No direct script access allowed');
+require_once(BASEPATH."includes/web_head.php")
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SIBUKMA/Home</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/buku2.png">
-    <link rel="shortcut icon" type="image/ico" href="images/buku2.png" />
-
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/icofont.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/cardslider.css">
-    <link rel="stylesheet" href="css/responsiveslides.css">
-
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/overright.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
 
 <body data-spy="scroll" data-target="#mainmenu" data-offset="15">
     <!--[if lt IE 8]>
@@ -87,7 +65,7 @@
                                 <a href="#sc6">Client</a>
                             </li>
                             <li>
-                                <a href="books.html">Books</a>
+                                <a href="books.php">Books</a>
                             </li>
                         </ul>
                     </div>
@@ -246,7 +224,7 @@
                             </ul>
                         </div>
                         <div class="space-20"></div>
-                        <a href="books.html">Technology</a>
+                        <a href="books.php">Technology</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
@@ -261,7 +239,7 @@
                             </ul>
                         </div>
                         <div class="space-20"></div>
-                        <a href="books.html">Novel</a>
+                        <a href="books.php">Novel</a>
                     </div>
                 </div>
                 
@@ -269,7 +247,7 @@
             <div class="space-60"></div>
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <a href="books.html" class="btn btn-primary">See Books</a>
+                    <a href="books.php" class="btn btn-primary">See Books</a>
                 </div>
             </div>
             <div class="space-80"></div>
@@ -362,8 +340,8 @@
                                     <li><i class="icofont icofont-star"></i></li>
                                 </ul>
                                 <div class="space-20"></div>
-                                <a href="books.html" class="btn btn-primary hover-btn-default">See The Book</a>
-                                <a href="books.html" class="btn btn-primary hover-btn-default">Read Later</a>
+                                <a href="books.php" class="btn btn-primary hover-btn-default">See The Book</a>
+                                <a href="books.php" class="btn btn-primary hover-btn-default">Read Later</a>
                             </div>
                             <div class="book-details-item">
                                 <h4 class="tip-left">Title</h4>
@@ -791,68 +769,9 @@
         </div>
         <div class="space-80"></div>
     </section>
-    <footer class="black-bg text-white">
-        <div class="space-60"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#"><img src="images/buku2.png" alt="library" height="177" width="43"> SIBUKMA</a>
-                    <div class="space-20"></div>
-                    <p>Terima kasih telah berkunjung ke web kami. <br> Kritik dan saran akan kami terima. </p>
-                    <div class="space-10"></div>
-                    <ul class="list-inline list-unstyled social-list">
-                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                   </ul>
-                    <div class="space-10"></div>
-                    <ul class="list-unstyled list-inline tip yellow">
-                        <li><i class="icofont icofont-square"></i></li>
-                        <li><i class="icofont icofont-square"></i></li>
-                        <li><i class="icofont icofont-square"></i></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
-                    <h4 class="text-white">Contact Us</h4>
-                    <div class="space-20"></div>
-                    <table class="table border-none addr-dt">
-                        <tr>
-                             <td><i class="icofont icofont-social-google-map"></i></td>
-                            <td><address>Politeknik Negeri Ujung Pandang | JL.Perintis Kemerdekaan KM.10 Tamalanrea</address></td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-email"></i></td>
-                            <td>sibukma@domain.com</td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-phone"></i></td>
-                            <td>+62 85217590xxx</td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-globe-alt"></i></td>
-                            <td><a href="www.sibukma.com" target="_blank">www.sibukma.com</a></td>
-                        </tr>
-                    </table>
-                </div>
-                
-            </div>
-        </div>
-        <div class="space-60"></div>
-    </footer>
-
-    <!-- Vandor-JS -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!-- Plugin-JS -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script src="js/jquery.cardslider.min.js"></script>
-    <script src="js/pagination.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <!-- Active-JS -->
-    <script src="js/main.js"></script>
-
+<?php
+	require_once(BASEPATH."includes/web_footer.php")
+?>
 </body>
 
 </html>
