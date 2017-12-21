@@ -112,7 +112,7 @@ require_once(BASEPATH."includes/web_head.php")
                             <div class="category-item well yellow">
                                 <div class="media">
                                     <div class="media-left">
-                                        <img style="width:180px; height:250px" src="<?php echo "gambar/".$data['id'].".png"?>" class="media-object" alt="">
+                                        <img style="width:200px; height:300px" src="<?php echo "gambar/".$data['id'].".png"?>" class="media-object" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5><?php echo $data['id_buku']." ".$data['judul'] ?></h5>
@@ -127,7 +127,7 @@ require_once(BASEPATH."includes/web_head.php")
                                         </ul>
                                         <div class="space-10"></div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                                        <a href="details.html" class="more" class="text-primary">Details Book</a>
+                                        <a href="details.php" class="more" class="text-primary">Details Book</a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@ require_once(BASEPATH."includes/web_head.php")
 					}
 			?>			
 					
-					</div>
+    					</div>
                     <div class="space-60"></div>
                     <div class="row">
                         <div class="col-xs-12">

@@ -1,3 +1,9 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'].'/SIBUKMA/config/Core.php');
+defined('BASEPATH') OR exit('No direct script access allowed');
+require_once(BASEPATH."includes/web_head.php")
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -11,23 +17,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/buku2.png">
     <link rel="shortcut icon" type="image/ico" href="images/buku2.png" />
-
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/icofont.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/cardslider.css">
-    <link rel="stylesheet" href="css/responsiveslides.css">
-
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/overright.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
     
 </head>
 
@@ -65,19 +54,10 @@
                     <div class="navbar-right in fade" id="mainmenu">
                         <ul class="nav navbar-nav nav-white text-uppercase">
                             <li class="active">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
-                            <li>
-                                <a href="index.html#sc2">About</a>
-                            </li>
-                            <li>
-                                <a href="index.html#sc4">Team</a>
-                            </li>      
-                            <li>
-                                <a href="index.html#sc6">Client</a>
-                            </li>
-                            <li>
-                                <a href="books.html">Books</a>
+                           <li>
+                                <a href="books.php">Books</a>
                             </li>
                         </ul>
                     </div>
@@ -86,35 +66,11 @@
         </div>
         <div class="space-100"></div>
         <!-- Mainmenu-markup-end -->
-        <!-- Header-jumbotron -->
-        <div class="space-100"></div>
-        <div class="header-text">
-            <div class="container">
-                <div class="row wow fadeInUp">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-                        <div class="jumbotron">
-                            <h1 class="text-white">SIBUKMA
-                            <br/>Sistem Informasi Buku Makassar</h1>
-                        </div>
-                        <div class="title-bar white">
-                            <ul class="list-inline list-unstyled">
-                                <li><i class="icofont icofont-square"></i></li>
-                                <li><i class="icofont icofont-square"></i></li>
-                            </ul>
-                        </div>
-                        <div class="space-10"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="space-100"></div>
-            
-            
             <div class="new_prod_bg">
-                        <a href="details.html"><img src="images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                        <a href="details.php"><img src="images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
                         </div>           
             <div class="col-xs-12 col-md-12 padding60 gray-bg wow fadeInRight">
-                <a href="books.html">books</a> &gt;&gt; details book
+                <a href="books.php">books</a> &gt;&gt; details book
             
             
                 <div class="space-20"></div>
@@ -161,10 +117,7 @@
                     <div class="space-60"></div>
                 </div>
         
-        	<div class="feat_prod_box_details">
-            <a href="images/big_pic.jpg" rel="lightbox"><img src="images/zoom.gif" alt="" title="" border="0" /></a>
-                </div>
-                
+                       
                 <div class="prod_det_box">
                 	<div class="box_top"></div>
                     <div class="box_center">
@@ -201,74 +154,11 @@
        
        
        <div class="clear"></div>
-       </div><!--end of center content-->
+       </div><!--end of center content-->    
 
-       <!-- Footer-Area -->
-    <footer class="black-bg text-white">
-        <div class="space-60"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#"><img src="images/buku2.png" alt="library" height="177" width="43"> SIBUKMA</a>
-                    <div class="space-20"></div>
-                    <p>Terima kasih telah berkunjung ke web kami.<br> Kritik dan saran akan kami terima. </p>
-                    <div class="space-10"></div>
-                    <ul class="list-inline list-unstyled social-list">
-                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                    </ul>
-                    <div class="space-10"></div>
-                    <ul class="list-unstyled list-inline tip yellow">
-                        <li><i class="icofont icofont-square"></i></li>
-                        <li><i class="icofont icofont-square"></i></li>
-                        <li><i class="icofont icofont-square"></i></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
-                    <h4 class="text-white">Contact Us</h4>
-                    <div class="space-20"></div>
-                    <table class="table border-none addr-dt">
-                        <tr>
-                            <td><i class="icofont icofont-social-google-map"></i></td>
-                            <td><address>Politeknik Negeri Ujung Pandang | JL.Perintis Kemerdekaan KM.10 Tamalanrea</address></td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-email"></i></td>
-                            <td>sibukma@domain.com</td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-phone"></i></td>
-                            <td>+62 85217590xxx</td>
-                        </tr>
-                        <tr>
-                            <td><i class="icofont icofont-globe-alt"></i></td>
-                            <td><a href="www.sibukma.com" target="_blank">www.sibukma.com</a></td>
-                        </tr>
-                    </table>
-                </div>
-                
-            </div>
-        </div>
-        <div class="space-60"></div>
-       
-              
-       </footer>
-    <!-- Footer-Area-End -->
-
-    <!-- Vandor-JS -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!-- Plugin-JS -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script src="js/jquery.cardslider.min.js"></script>
-    <script src="js/pagination.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <!-- Active-JS -->
-    <script src="js/main.js"></script>
-
+<?php
+    require_once(BASEPATH."includes/web_footer.php")
+?>
 </body>
 
 </html>
