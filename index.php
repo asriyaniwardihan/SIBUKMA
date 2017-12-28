@@ -106,9 +106,9 @@ require_once(BASEPATH."includes/web_head.php")
                             <div class="panel-body">
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="book">
-                                        <form action="#">
+                                        <form action="books.php" method="post" enctype="multipart/form-data">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Enter book name">
+                                                <input type="text" class="form-control" name="judul" placeholder="Enter book name">
                                                 <div class="input-group-btn">
                                                     <button type="submit" class="btn btn-primary"><i class="icofont icofont-search-alt-2"></i></button>
                                                 </div>

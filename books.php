@@ -68,30 +68,39 @@ require_once(BASEPATH."includes/web_head.php")
                 <div class="col-xs-12 col-md-10 pull-right">
                     <h4>Search Book</h4>
                     <div class="space-5"></div>
-                    <form action="#">
+                    <form action="" method="post">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter book name">
+                            <input type="text" class="form-control" name="judul" placeholder="Enter book name">
                             <div class="input-group-btn">
                                 <button type="submit" class="btn btn-primary"><i class="icofont icofont-search-alt-2"></i></button>
                             </div>
                         </div>
                     </form>
                     <div class="space-30"></div>
+                    <?php           
+                    $db = new Database();
+                    if(isset($_POST['judul'])){
+                        $text = $_POST['judul'];
+                        $rs = $db->psql("SHOW","*","buku","judul like '%$text%'");
+                    }
+                    else 
+                        $rs = $db->psql("SHOW","*","buku");
+                    $jmldata = count($rs);
+                    ?>
+
                     <div class="row">
                         <div class="pull-left col-xs-12 col-sm-5 col-md-6">
                             <p>Result For <a href="" class="text-primary">"Your Searching"</a></p>
-                            <p><strong>6</strong> of <strong>20</strong> Book Found</p>
+                            <p><strong> <?php echo $jmldata ?></strong>  <strong></strong> Book Found</p>
                         </div>
                         
                     </div>
                     <hr>
                     <div class="space-20"></div>
                     <div class="row">
-		<?php			
-					$db = new Database();
-					$rs = $db->psql("SHOW","*","buku");
-					foreach($rs as $data) {
-		?>
+                        <?php
+                    foreach($rs as $data) {
+                    ?>
                         <div class="col-xs-6">
                             <div class="category-item well yellow">
                                 <div class="media">
@@ -103,7 +112,7 @@ require_once(BASEPATH."includes/web_head.php")
                                         <h6>By <?php echo $data['penulis'] ?></h6>
                                         <div class="space-10"></div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                                        <a href="details.php" class="more" class="text-primary">Details Book</a>
+                                        <a href="details.php?id_buku=<?php echo $data['id_buku']?> " class="more" class="text-primary">Details Book</a>
                                         <div class="clear"></div>
                                     </div>
                                 </div>

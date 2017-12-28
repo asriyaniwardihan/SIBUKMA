@@ -70,9 +70,7 @@ require_once(BASEPATH."includes/web_head.php")
                         <a href="details.php"><img src="images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
                         </div>           
             <div class="col-xs-12 col-md-12 padding60 gray-bg wow fadeInRight">
-                <a href="books.php">books</a> &gt;&gt; details book
-            
-            
+              
                 <div class="space-20"></div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
@@ -121,7 +119,11 @@ require_once(BASEPATH."includes/web_head.php")
                 <div class="prod_det_box">
                 	<div class="box_top"></div>
                     <div class="box_center">
-                    <a href="details.html" class="more"><img src="images/order_now.gif" alt="" title="" border="0" /></a>
+                    <form method="post" action="sess_cart.php">
+                        <input type="" value="2" name="id" />
+                        <button type="submit" class="btn btn-default">Buy</button>
+                    </form>
+                    <!-- <a href="details.php" class="more"><img src="images/order_now.gif" alt="" title="" border="0" /></a> -->
                     <div class="clear"></div>
                     </div>
                     
